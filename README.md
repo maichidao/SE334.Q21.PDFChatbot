@@ -2,6 +2,7 @@
 Chatbot hỏi đáp tài liệu PDF sử dụng Python, Streamlit và Gemini API.
 
 ## Cấu trúc thư mục
+```text
 pdf-chatbot/
 │
 ├── app.py
