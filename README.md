@@ -42,3 +42,13 @@ pdf-chatbot/
 │   # python-dotenv
 │
 └── README.md              # Hướng dẫn cài đặt và chạy dự án
+
+## Install PyPDF2
+Cách 1
+```bash
+py -m pip install -r requirements.txt
+```
+Cách 2
+```bash
+python -m pip install -r requirements.txt
+```
