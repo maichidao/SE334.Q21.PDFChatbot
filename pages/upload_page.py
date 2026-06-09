@@ -15,3 +15,5 @@ def show_upload_page():
         st.write(f"**Số trang:** {len(reader.pages)}")
         
         st.success("Upload thành công!")
+
+show_upload_page()
