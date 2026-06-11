@@ -16,4 +16,4 @@ def show_upload_page():
         
         st.success("Upload thành công!")
 
-show_upload_page()
+# show_upload_page()
