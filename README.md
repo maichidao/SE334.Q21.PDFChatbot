@@ -14,7 +14,7 @@ pdf-chatbot/
 │   ├── prompt_builder.py  # Xây dựng Prompt Template
 │   ├── token_handler.py   # Xử lý token limit
 │
-├── pages/
+├── components/
 │   ├── upload_page.py     # Giao diện upload PDF
 │   ├── chat_page.py       # Giao diện hỏi đáp
 |
@@ -53,3 +53,4 @@ Cách 2
 ```bash
 python -m pip install -r requirements.txt
 ```
+

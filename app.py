@@ -1,6 +1,6 @@
 import streamlit as st
-from pages.upload_page import show_upload_page
-from pages.chat_page import show_chat_page
+from components.upload_page import show_upload_page
+from components.chat_page import show_chat_page
 
 if "page" not in st.session_state:
     st.session_state.page = "upload"
