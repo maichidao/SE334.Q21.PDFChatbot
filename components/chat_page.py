@@ -5,8 +5,12 @@ from modules.token_handler import get_token_stats
 
 
 def show_chat_page():
+    with st.sidebar:
+        if st.button("⬅ Quay lại trang upload", type="secondary", use_container_width=True):
+            st.session_state.page = "upload"
+            st.rerun()
     st.title("PDF Chatbot")
-
+    
     if "messages" not in st.session_state:
         st.session_state.messages = []
 
