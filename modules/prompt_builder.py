@@ -50,15 +50,15 @@ def build_prompt(
     context: str,
     question: str,
     style: PromptStyle = PromptStyle.STANDARD,
-    max_context_chars: int = 30000,
 ) -> str:
+    """
+    Xây dựng prompt từ context và question.
+    Không cắt context ở đây — token_handler đã đảm bảo context nằm trong giới hạn.
+    """
     if not context or not context.strip():
         raise ValueError("context không được để trống.")
     if not question or not question.strip():
         raise ValueError("question không được để trống.")
-
-    if len(context) > max_context_chars:
-        context = context[:max_context_chars] + "\n\n[...Tài liệu bị cắt bớt do quá dài...]"
 
     return TEMPLATES[style].format(context=context.strip(), question=question.strip())
 
