@@ -13,3 +13,14 @@ def ask_gemini(prompt: str) -> str:
         contents=prompt
     )
     return response.text
+
+
+def ask_gemini_stream(prompt: str):
+    """Gửi prompt và trả về generator cho streaming response."""
+    response = client.models.generate_content_stream(
+        model="gemini-2.5-flash",
+        contents=prompt
+    )
+    for chunk in response:
+        if chunk.text:
+            yield chunk.text
